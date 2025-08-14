@@ -1,0 +1,9 @@
+<template>
+    <lightning-modal-header label="Update Button Name"></lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-input type="text" value={newNameValue} onchange={handleChange} placeholder="Enter new button name and click save..."></lightning-input>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="Save" onclick={handleSave} disabled={isDisabled}></lightning-button>
+    </lightning-modal-footer>
+</template>
